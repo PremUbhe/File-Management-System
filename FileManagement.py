@@ -31,20 +31,21 @@ def display_files():  # to display all the file in repository
 
 def code():
     while True:
+        print("*********************************")
         key = str(input("Enter Your choice:"))
 
         if key == 'q' and 'Q':
-            print("end")
+            print("*** Thank You ***")
             break
 
         if key != '1' and '2':
-            print('wrong choice')
+            print('** Wrong Choice **')
 
         if key == '1':
             display_files()
             choice = str(input("Enter File name:"))
             if choice not in file_names:
-                print("File not exist")
+                print("** File not exist ***")
             else:
                 print("***** File Content *****")
                 open_file(choice)
