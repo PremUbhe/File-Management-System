@@ -1,9 +1,5 @@
 # file management using password
-"""1. display contex
-2. create file with password
-3. read file using password
-"""
-import os
+import os   
 
 print("**** File Management System ****")
 print("press 1 for File Access")
@@ -11,7 +7,7 @@ print("press 2 for creating File")
 print("press Q for Quit")
 print("*********************************")
 
-path = "C://Users//Dell//PycharmProjects//pythonProject1//Projects//Data Science Project//Password"
+path = " ... "    # past the path of your folder where you want your file going to be open or create
 file_names = os.listdir(path)
 
 
