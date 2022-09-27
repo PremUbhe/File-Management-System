@@ -12,12 +12,12 @@ file_names = os.listdir(path)
 
 
 def open_file(name):  # read file function
-    file = open(name, "r")
+    file = open(name, "r")   # r is for only reading the file
     print(file.read())
 
 
 def create_file(name):  # creating a new file function
-    file = open(name, "w")
+    file = open(name, "w")    # w is to write in your file
     context = input("Enter what you want in your File:")
     file.write(context)  # this will add your context in your file
     file.close()
